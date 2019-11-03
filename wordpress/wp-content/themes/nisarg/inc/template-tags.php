@@ -79,7 +79,7 @@ function nisarg_post_navigation() {
 			?>
 			<div class="col-md-6 next-post">
 			<a class="" href="<?php echo esc_url(get_permalink( $next_post->ID )); ?>"><span class="next-prev-text"><i class="fa fa-angle-left"></i>
- <?php _e(' NEXT','nisarg'); ?></span><br><?php if(get_the_title( $next_post->ID ) != ''){echo get_the_title( $next_post->ID );} else {  _e('Next Post','nisarg'); }?></a>
+ <?php _e(' 下一篇','nisarg'); ?></span><br><?php if(get_the_title( $next_post->ID ) != ''){echo get_the_title( $next_post->ID );} else {  _e('下一篇文章','nisarg'); }?></a>
 			</div>
 			<?php } 
 			 else { 
@@ -95,8 +95,8 @@ function nisarg_post_navigation() {
 				if (!empty( $prev_post )){
 			?>
 				<div class="col-md-6 prev-post">
-				<a class="" href="<?php echo esc_url(get_permalink( $prev_post->ID )); ?>"><span class="next-prev-text"><?php _e('PREVIOUS ','nisarg'); ?><i class="fa fa-angle-right"></i>
-</span><br><?php if(get_the_title( $prev_post->ID ) != ''){echo get_the_title( $prev_post->ID );} else { _e('Previous Post','nisarg'); }?></a>
+				<a class="" href="<?php echo esc_url(get_permalink( $prev_post->ID )); ?>"><span class="next-prev-text"><?php _e('上一篇 ','nisarg'); ?><i class="fa fa-angle-right"></i>
+</span><br><?php if(get_the_title( $prev_post->ID ) != ''){echo get_the_title( $prev_post->ID );} else { _e('上一篇文章','nisarg'); }?></a>
 				</div>
 			<?php } 
 			 else { 
